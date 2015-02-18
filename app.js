@@ -2,10 +2,6 @@ $("#textToggle").click(function (event) {
 	CloakText();
 });
 
-if ($("#textToggle:checked")){
-	CloakText();
-}
-
 function Hash(){
 	$("#input").keyup(function (event) {
 	  if (event.keyCode === 13) {
@@ -73,3 +69,7 @@ function ReplaceInput(text, typeVal) {
 	$("#inputPlaceholder").append(element);
 	Hash();
 }
+
+setTimeout(function() {
+    $("#input").focus();
+}, 350);
