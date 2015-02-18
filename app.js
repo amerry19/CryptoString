@@ -56,6 +56,7 @@ function CloakText() {
   // Move cursor to end of string after refocusing
   $("#input").val($("#input").val());
 };
+CloakText();
 
 function ToggleResult(flag) {
 	var $result = $(".result");
