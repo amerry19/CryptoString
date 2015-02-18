@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                min-width: 220px; 
+                overflow-x: hidden; 
+                font-family: Tahoma, sans-serif; 
+                font-size: 14px; 
+            }
+            input, textarea { 
+                margin-top: 5px;
+                border-radius: 5px;
+                border-style: solid;
+                border-color: rgb(0, 141, 236);
+                outline: none;
+                width: 220px;
+                height: 17px; 
+                padding: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <p><label for="title">Type password and press enter:</label><br />
+        <input type="text" id="input" autofocus size="50"/></p>
+        
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="cryptojs.min.js"></script>
+        <script type="text/javascript" src="cryptopass.js"></script>
+    </body>
+</html>

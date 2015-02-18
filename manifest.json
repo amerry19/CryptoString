@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "CryptoString",
+    "description": "Encrypts input into a SHA-3 512 bit hashed string and returns the first 32 characters. Built by the Monterey Bay Aquarium webteam.",
+    "version": "0.1.1",
+    "background": {},
+    "browser_action": {
+        "default_popup": "popup.html"
+    },
+    "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png",
+          "256": "icon256.png",
+          "512": "icon512.png"
+    },
+    "permissions": []
+}
