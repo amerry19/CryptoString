@@ -14,15 +14,36 @@
                 border-style: solid;
                 border-color: rgb(0, 141, 236);
                 outline: none;
-                width: 220px;
+                min-width: 220px;
                 height: 17px; 
                 padding: 2px;
+            }
+            .title {
+                margin:0 0 10px;
+            }
+            .result {
+                display: none;
+                margin-top: 5px;
+            }
+            #output {
+                text-align: center;
+            }
+            #textToggle {
+                vertical-align: middle;
             }
         </style>
     </head>
     <body>
-        <p><label for="title">Type password and press enter:</label><br />
-        <input type="text" id="input" autofocus size="50"/></p>
+        <h5 class="title">CryptoString!</h5>
+        Cloak input: <input type="checkbox" id="textToggle" checked>
+        <div id="inputPlaceholder">
+            <label for="title">Type password and press enter:</label><br />
+            <input id="input" autofocus size="50" type="text"/>
+        </div>
+        <div class="result">
+            Press Ctrl/Cmd + C to copy your hash:
+            <p id="output"></p>
+        </div>
         
         <script type="text/javascript" src="jquery.min.js"></script>
         <script type="text/javascript" src="cryptojs.min.js"></script>
